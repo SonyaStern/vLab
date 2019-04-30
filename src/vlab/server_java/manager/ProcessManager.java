@@ -20,7 +20,7 @@ public class ProcessManager {
 
     Process server = new ProcessBuilder(
         "java", "-cp",
-        "\".\\out\\production\\vLab_prototype;.\\lib\\*\"",
+        "\".\\out\\production\\vLab;.\\lib\\*\"",
         "vlab.server_java.Starter").start();
 
     new Thread(() -> {
